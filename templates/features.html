@@ -3,37 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <title>Mood Journal Features</title>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
         <h1>Key Features of Mood Journal</h1>
     </header>
 
-    <!-- Feature 1 -->
-    <section id="feature-1">
-        <h2>Feature 1: Name of the Feature</h2>
-        <img src="feature1-image.jpg" alt="Feature 1 Screenshot">
-        <p>Description of Feature 1.</p>
+    <section id="mood-entry-feature">
+        <h2>Feature: Mood Entry</h2>
+        <img src="{{ url_for('static', filename='images/mood-entry.jpg') }}" alt="Mood Entry Screenshot">
+        <p>Experience a rollercoaster of emotions? Capture every twist and turn with our Mood Entry feature! It's like a personal emotion-themed amusement park for your feelings.</p>
+        <p>Choose from a range of mood options, from "Rainbows and Butterflies" to "Couch Potato Mode." We even have a secret "Unicorn Mode" for those extra special days.</p>
+        <p>Track your moods, add notes, and see your emotional journey unfold in colorful graphs. It's like a mood ring for the digital age!</p>
     </section>
 
-    <!-- Feature 2 -->
-    <section id="feature-2">
-        <h2>Feature 2: Name of the Feature</h2>
-        <img src="feature2-image.jpg" alt="Feature 2 Screenshot">
-        <p>Description of Feature 2.</p>
+    <section id="journal-entry-feature">
+        <h2>Feature: Journal Entry</h2>
+        <img src="{{ url_for('static', filename='images/journal-entry.jpg') }}" alt="Journal Entry Screenshot">
+        <p>Feel like sharing your innermost thoughts? Our Journal Entry feature lets you spill your emotional beans in style!</p>
+        <p>Write daily entries, dramatic poetry, or even love letters to your favorite snacks. Our rich-text editor makes your musings look as fancy as Shakespearean sonnets.</p>
+        <p>Tag your entries with emojis, because a single heart-eyed emoji is worth a thousand words. Plus, add photos to your journal, because sometimes a picture of your breakfast cereal speaks louder than words.</p>
+        <p>So, why keep your feelings bottled up when you can uncork them in your digital diary? Journal like nobody's reading!</p>
     </section>
-
-    <!-- Feature 3 -->
-    <section id="feature-3">
-        <h2>Feature 3: Name of the Feature</h2>
-        <img src="feature3-image.jpg" alt="Feature 3 Screenshot">
-        <p>Description of Feature 3.</p>
-    </section>
-
-    <!-- Additional Features Can Be Added as Needed -->
-
 </body>
 </html>
