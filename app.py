@@ -1,6 +1,4 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
-from config import app
-
 
 app = Flask(__name__)
 
