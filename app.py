@@ -1,6 +1,6 @@
-from flask import Flask, render_template, request, redirect, url_for, session, flash
+from flask import Flask, render_template
 
-app = Flask('__name__')
+app = Flask(__name__)
 
 @app.route("/")
 def landing():
@@ -14,5 +14,5 @@ def about():
 def features():
     return render_template('features.html')
 
-if ('__name__') == "__main__":
+if __name__ == "__main__":
     app.run(debug=True)
