@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <title>Mood Journal Features</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
 
     <section id="journal-entry-feature">
         <h2>Feature: Journal Entry</h2>
-        <img src="{{ url_for('static', filename='images/journal-entry.jpg') }}" alt="Journal Entry Screenshot">
+        <img src="{{ url_for('static', filename='images/journal-entry.jpeg') }}" alt="Journal Entry Screenshot">
         <p>Feel like sharing your innermost thoughts? Our Journal Entry feature lets you spill your emotional beans in style!</p>
         <p>Write daily entries, dramatic poetry, or even love letters to your favorite snacks. Our rich-text editor makes your musings look as fancy as Shakespearean sonnets.</p>
         <p>Tag your entries with emojis, because a single heart-eyed emoji is worth a thousand words. Plus, add photos to your journal, because sometimes a picture of your breakfast cereal speaks louder than words.</p>
