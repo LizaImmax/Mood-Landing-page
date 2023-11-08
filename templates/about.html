@@ -3,7 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Add custom CSS styles for the about page */
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif; /* Use a professional font */
+        }
+
+        /* Styling for the header section */
+        header {
+            background-color: #3498db; /* Blue background */
+            padding: 20px;
+        }
+
+        /* Styling for section headers */
+        section h2 {
+            color: #3498db; /* Blue text color */
+            font-size: 24px; /* Increase font size */
+        }
+
+        /* Add space between sections and sentences */
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            text-align: left;
+            line-height: 1.6; /* Adjust line height for better readability */
+        }
+
+        /* Styling for links in the 'About the Author' section */
+        #about-author a {
+            color: #3498db; /* Blue link color */
+            text-decoration: none; /* Remove underline from links */
+            font-weight: bold; /* Make links more prominent */
+        }
+
+        /* Fun styling for quotes */
+        .quote {
+            border-left: 5px solid #3498db; /* Left border in blue */
+            padding-left: 10px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+    </style>
     <title>About Mood Journal</title>
 </head>
 <body>
@@ -15,16 +57,16 @@
     <!-- Description of Project Inspiration -->
     <section id="project-inspiration">
         <h2>Inspiration</h2>
-        <p>The project was inspiried by my girlfriend who lives with Bipolar 2, which is a mood disorder. Bipolar II disorder is diagnosed when a person has a pattern of depressive and hypomanic episodes but not full-blown manic episodes as in bipolar I disorder. We thought it was a good idea to keep track of her mood one afternoon after a doctors visit.</p>
+        <p>The project was inspired by my girlfriend who lives with Bipolar 2, which is a mood disorder. Bipolar II disorder is diagnosed when a person has a pattern of depressive and hypomanic episodes but not full-blown manic episodes as in bipolar I disorder. We thought it was a good idea to keep track of her mood one afternoon after a doctor's visit.</p>
     </section>
 
     <!-- Team Members and Links -->
-    section id="about-author">
+    <section id="about-author">
         <h2>About the Author</h2>
         <p>This project was a solo endeavor, and it was developed by Elizabeth Muthoni.</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/elizabeth-muthoni-44a378129/">[Your LinkedIn]</a></p>
-        <p>GitHub: <a href="https://github.com/LizaImmax">[Your GitHub]</a></p>
-        <p>X: <a href="https://twitter.com/immaxliza">[Your Twitter]</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/elizabeth-muthoni-44a378129/">[My LinkedIn]</a></p>
+        <p>GitHub: <a href="https://github.com/LizaImmax">[My GitHub]</a></p>
+        <p>Twitter: <a href="https://twitter.com/immaxliza">[My Twitter]</a></p>
     </section>
 
     <!-- GitHub Repository Link -->
@@ -33,5 +75,18 @@
         <p>Explore my project on GitHub: <a href="https://github.com/LizaImmax/Mood-Journal">Mood Journal on GitHub</a></p>
     </section>
 
+    <!-- Fun stylings for quotes -->
+    <div class="quote">
+        <blockquote>
+            <p>"Your emotions are your compass; use them to navigate your life."</p>
+            <footer>Anonymous</footer>
+        </blockquote>
+    </div>
+    <div class="quote">
+        <blockquote>
+            <p>"The first step to change is awareness. The second step is acceptance."</p>
+            <footer>Nathaniel Branden</footer>
+        </blockquote>
+    </div>
 </body>
 </html>

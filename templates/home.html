@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Add custom CSS styles for the home page */
+        body {
+            font-family: 'Arial', sans-serif; /* Use a professional font */
+        }
+
+        h1, h2 {
+            color: #3498db; /* Blue text color for headers */
+        }
+
+        /* Add space between sections and sentences */
+        section {
+            margin-bottom: 30px;
+            line-height: 1.6; /* Adjust line height for better readability */
+        }
+
+        /* Fun styling for paragraph text */
+        p {
+            font-size: 18px; /* Increase font size for better readability */
+        }
+
+        /* Style the "Funny Sample" box with a pen */
+        .funny-sample-box {
+            background-color: #ffcccb; /* Light red background */
+            border: 2px dashed #3498db; /* Blue dashed border */
+            padding: 20px;
+        }
+
+        .funny-sample-box p {
+            margin-top: 0; /* Remove top margin for the first paragraph inside the box */
+        }
+
+        .pen-image {
+            max-width: 30px; /* Adjust the pen image size */
+        }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to the First day for the rest of your life! Literaly!</h1>
+    </header>
+
+    <section>
+        <h2>What is Mood Tracking?</h2>
+        <p>Mood tracking is the practice of regularly recording and analyzing your emotional state, feelings, and overall well-being. It allows you to keep a digital diary of your moods and provides valuable insights into your emotional health over time.</p>
+        <p>With our Mood Tracking Web App, you can easily log and visualize your moods, helping you gain a better understanding of your emotions and identify patterns in your feelings.</p>
+    </section>
+
+    <section>
+        <h2>Benefits of Mood Tracking</h2>
+        <p>Mood tracking offers several benefits:</p>
+        <ul>
+            <li>Improved self-awareness</li>
+            <li>Early detection of mood changes</li>
+            <li>Identification of triggers and stressors</li>
+            <li>Better mental health management</li>
+            <li>Enhanced communication with healthcare professionals</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>When Emojis Meet Mood Tracking</h2>
+        <div class="funny-sample-box">
+            <p>Today, my mood is:</p>
+            <p>😃 Happy</p>
+            <p>Why? Because I found a pen with wings and it flew away! 🚀</p>
+            <img class="pen-image" src="{{ url_for('static', filename='images/pen.png') }}" alt="Flying Pen">
+        </div>
+    </section>
+</body>
+</html>

@@ -4,6 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Add custom CSS styles for the features page */
+        body {
+            font-family: 'Arial', sans-serif; /* Use a professional font */
+        }
+
+        header {
+            background-color: #3498db; /* Blue header background */
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #3498db; /* Blue text color for headers */
+            text-align: center; /* Center headers */
+        }
+
+        /* Reduce image size to "medium" */
+        img {
+            max-width: 30%; /* Adjust as needed */
+            display: block; /* Center images */
+            margin: 0 auto;
+        }
+
+        /* Add space between sections and sentences */
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            text-align: left;
+            line-height: 1.6; /* Adjust line height for better readability */
+        }
+
+        /* Fun styling for paragraph text */
+        p {
+            font-size: 18px; /* Increase font size for better readability */
+        }
+
+        /* Add a border to paragraphs for a playful touch */
+        section p {
+            border-left: 5px solid #3498db; /* Left border in blue */
+            padding-left: 10px;
+        }
+    </style>
     <title>Mood Journal Features</title>
 </head>
 <body>
@@ -29,3 +71,4 @@
     </section>
 </body>
 </html>
+

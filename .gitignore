@@ -1,0 +1,12 @@
+# Ignore temporary files
+*.tmp
+
+# Ignore build artifacts
+/build/
+
+# Ignore IDE settings
+.vscode/
+venv/
+env/
+.venv/
+.env/
